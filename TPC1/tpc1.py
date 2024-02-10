@@ -13,7 +13,7 @@ with open("TPC1\emd.csv", "r", encoding="utf-8") as f:
         # transforma a linha em uma lista dos atributos do cliente
         cliente = linha.split(',')
 
-        modalidade = cliente[8]
+        modalidade = cliente[8].lower()
         apto = cliente[-1]
         idade = cliente[5]
         # adiciona a modalidade a uma lista caso esta ainda não esteja na lista
