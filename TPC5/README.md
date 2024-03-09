@@ -7,6 +7,7 @@
 
 ## Descrição
 Criar em python um simulador de uma máquina de vending.
+
 Existe um ficheiro onde está guardada uma lista de produtos como por exemplo:
 
 | id | Nome | Preço |
@@ -19,8 +20,8 @@ Existe um ficheiro onde está guardada uma lista de produtos como por exemplo:
 Comandos como exemplos:
 
 >**>>** LISTAR  
->>1 água 50 \
-c2 bolo 60c
+>>1 água 50c \
+2 bolo 60c
 
 >**>>** MOEDA 1e,10c,20c  
 >> saldo = 1e,30c
