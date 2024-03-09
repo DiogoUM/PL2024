@@ -7,7 +7,6 @@
 
 ## Descrição
 Criar em python um simulador de uma máquina de vending.
-
 Existe um ficheiro onde está guardada uma lista de produtos como por exemplo:
 
 | id | Nome | Preço |
