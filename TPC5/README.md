@@ -11,8 +11,7 @@ Existe um ficheiro onde está guardada uma lista de produtos como por exemplo:
 
 | id | Nome | Preço |
 |----|------|-------|
-|1   | água | 50c   |
-|2   | bolo | 60c   |
+|A23 | água |   0.7 |
 ...
 
 
@@ -38,6 +37,14 @@ maq: Saldo insufuciente para satisfazer o seu pedido
 maq: Saldo = 60c; Pedido = 70c
 
 >**>>** SAIR  
-maq: Pode retirar o troco: 1x 50c, 1x 20c e 2x 2c.
+maq: Pode retirar o troco: 1x 50c, 1x 20c e 2x 2c.  
 maq: Até à próxima
 
+
+Para a resolução deste problema foraam primeiramente identificados os tokens necessários para a construção do analisador léxico.
+
+Posteriormente foram desenvolvidas as expressões regulares para a deteção de cada token.
+
+Foi também criado e desenvolvido um ficheiro "produtos.json" para efeitos de demenstração e teste, que contém os produtos referentes a uma máquina de vending.
+
+Por último foram desenvolvidas as funções necessárias para que o programa tenha um comportamento idêntico ao descrito.

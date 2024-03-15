@@ -123,6 +123,10 @@ def selecionarProduto(codigo):
         saldo()
 
 def sair():
+    with open('produtos.json', 'w', encoding='utf-8') as file:
+        p = [{"cod": k, **v} for k, v in produtos.items()]
+        dic = {'stock':p}
+        json.dump(dic, file)
     global carteira
     # TODO troco
     saldo()
@@ -136,7 +140,7 @@ maq: Bom dia. Estou disponível para atender o seu pedido.
 ''')
 
 print('>> ',end='', flush=True)
-
+fim = False
 for linha in sys.stdin:
     lexer.input(linha)
 
@@ -151,10 +155,11 @@ for linha in sys.stdin:
             selecionarProduto(token.value)
         elif token.type == 'SAIR':
             sair()
+            fim = True
         elif token.type == 'SALDO':
             saldo()
         else:
             print('Operação não suportada')
-
+    if fim: break
     print('>> ',end='', flush=True)
 
