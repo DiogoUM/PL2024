@@ -86,12 +86,15 @@ def addCarteira(e,c):
     carteira += e*100 + c
 
 def printDinheiro(valor):
-    euros = valor // 100
-    centimos = valor - euros * 100
-    if euros > 0:
-        print(f'{str(euros)}e', end='', flush=True)
-    if centimos > 0:
-        print(f'{str(centimos)}c', end='', flush=True)
+    if (valor == 0):
+        print('0c', end='', flush=True)
+    else:
+        euros = valor // 100
+        centimos = valor - euros * 100
+        if euros > 0:
+            print(f'{str(euros)}e', end='', flush=True)
+        if centimos > 0:
+            print(f'{str(centimos)}c', end='', flush=True)
 
 def saldo(enter = True):
     global carteira
