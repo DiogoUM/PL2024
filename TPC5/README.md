@@ -18,16 +18,26 @@ Existe um ficheiro onde está guardada uma lista de produtos como por exemplo:
 
 Comandos como exemplos:
 
->**>>** LISTAR  
->>1 água 50 \
-2c bolo 60c
+>**>>** LISTAR   
+maq:    
+cod | nome      | quantidade  |preço    
+\---------------------------------------------------   
+A23 | água 0.5L  | 8           | 0.7   
+...
+
 
 >**>>** MOEDA 1e,10c,20c  
->> saldo = 1e,30c
+maq: Saldo = 1e,30c
 
->**>>** SELECIONAR 2 
->> saldo = 70c
+>**>>** SELECIONAR A23  
+maq: Pode retirar o produto dispensado "água 0.5L"  
+maq: Saldo = 60c
+
+>**>>** SELECIONAR A23  
+maq: Saldo insufuciente para satisfazer o seu pedido    
+maq: Saldo = 60c; Pedido = 70c
 
 >**>>** SAIR  
->> Troco 50c,20c
+maq: Pode retirar o troco: 1x 50c, 1x 20c e 2x 2c.
+maq: Até à próxima
 
