@@ -31,5 +31,3 @@ Comandos como exemplos:
 >**>>** SAIR  
 >> Troco 50c,20c
 
-
-
